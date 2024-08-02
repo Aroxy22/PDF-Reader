@@ -1,5 +1,5 @@
 
-# Project Title
+# INVOICE READER
 
 A web application that facilitates the upload of invoice PDFs, processes them using OpenAI’s GPT-3.5 model for fine-tuned data extraction, and stores the extracted data in a MongoDB NoSQL database. Built with React for a responsive user interface, this application supports PDF editing and provides functionality for exporting data to Excel format, ensuring seamless data manipulation and retrieval.
 

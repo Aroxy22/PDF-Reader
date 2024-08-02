@@ -17,8 +17,8 @@ A web application that facilitates the upload of invoice PDFs, processes them us
 
 ## Tech Stack
 
-Frontend: React, Vite, Axios, Bootstrap, CSS
-Backend: Flask, Python 3, OpenAI GPT-3.5 Turbo, RESTful API
+Frontend: React, Vite, Axios, CSS
+Backend: Flask, Python 3, OpenAI GPT-3.5 Turbo
 Python Libraries: Flask-CORS, PyMuPDF (fitz), OpenAI, PyMongo, Pandas, JSON, IO
 Database: MongoDB
 Styling: CSS

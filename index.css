@@ -1,0 +1,379 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-header {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 20px;
+}
+
+input[type="file"] {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px dashed #61dafb;
+    background-color: #ffffff;
+    color: #333;
+    outline: none;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input[type="file"]:hover,
+input[type="file"]:focus {
+    background-color: #f0f8ff;
+    border-color: #21a1f1;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 10px 0;
+    background: linear-gradient(135deg, #21a1f1 0%, #61dafb 100%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #1e90ff 0%, #50b7f5 100%);
+}
+
+pre {
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    font-size: 14px;
+    background-color: #fff;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: 20px auto;
+    overflow-x: auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td button {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+
+td button:hover {
+    background-color: #45a049;
+}
+
+/* Updated CSS for NestedValuesRenderer component */
+
+/* Container for nested values */
+.nested-values-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for each nested section */
+.nested-section {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.section-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.section-content {
+    padding-left: 20px; /* Indent content */
+}
+
+/* Style for each field within a section */
+.nested-field {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.nested-label {
+    min-width: 180px; /* Adjust width as needed */
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.nested-value {
+    text-align: left;
+    color: #555;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex: 1;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #61dafb;
+    background-color: #f0f8ff;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .nested-label {
+        min-width: auto;
+        width: 100%;
+        text-align: left;
+        display: block;
+        margin-bottom: 5px;
+    }
+    .nested-value {
+        display: block;
+        margin-left: 0;
+    }
+}
+
+.name-and-back-button {
+    display: flex;
+    align-items: center; /* Vertically align items in the center */
+    justify-content: center; /* Center the filename */
+    position: relative; /* Position the button absolutely */
+}
+
+.back-button {
+    position: absolute; /* Position the button absolutely */
+    right: 0; /* Align the button to the extreme right */
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.invoice-details-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    margin: 0 10px; /* Add margin between columns */
+    margin-top: 20px;
+}
+
+.nested-field {
+    margin-bottom: 10px; /* Add space between fields */
+}
+
+.total-amount-label {
+    font-weight: bold;
+}
+
+.total-amount-value {
+    font-weight: bold;
+}
+
+/* Table styles for items */
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.items-table th, .items-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.items-table th {
+    background-color: #f2f2f2;
+}
+
+.items-table td input {
+    width: 90%;
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.items-table td input:focus {
+    border-color: #61dafb;
+    background-color: #f0f8ff;
+}
+
+.invoice-details-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    margin: 0 10px; /* Add margin between columns */
+    margin-top: 20px;
+}
+
+.nested-field {
+    margin-bottom: 10px; /* Add space between fields */
+}
+
+@media (max-width: 768px) {
+    .invoice-details-container {
+        flex-direction: column;
+    }
+}
+.invoice-details-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    margin: 0 10px; /* Add margin between columns */
+    margin-top: 20px;
+}
+
+.nested-field {
+    margin-bottom: 10px; /* Add space between fields */
+}
+
+@media (max-width: 768px) {
+    .invoice-details-container {
+        flex-direction: column;
+    }
+}
+
+/* Updated CSS for Total Amount with GST inside Items Table */
+
+.total-amount-label {
+    font-weight: bold;
+}
+
+.total-amount-value {
+    font-weight: bold;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.items-table th, .items-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.items-table th {
+    background-color: #f2f2f2;
+}
+
+.items-table td input {
+    width: calc(100% - 12px); /* Adjust width to fit within the cell */
+    padding: 6px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.items-table td input:focus {
+    border-color: #61dafb;
+    background-color: #f0f8ff;
+}
+
+.nested-label-of-edit-totalgst{
+    width: 80%;
+    font-weight: bold;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-left {
+    order: 1; /* Ensure this button is on the left */
+}
+
+.heading-center {
+    order: 2; /* Ensure the heading is in the center */
+    margin: 0; /* Remove default margin */
+}
+
+.button-right {
+    order: 3; /* Ensure this button is on the right */
+}

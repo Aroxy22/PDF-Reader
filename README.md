@@ -42,8 +42,8 @@ Styling: CSS
 
 1. Clone this repository:
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone <[repository-url](https://github.com/Aroxy22/PDF-Reader.git)>
+ 
     ```
 
 2. Set up the backend environment:

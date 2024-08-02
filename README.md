@@ -107,7 +107,7 @@ Styling: CSS
 
 ### Backend
 
-- `app.py`: Main Flask application file. Contains service logic, including GPT-3.5 interaction and PDF processing.
+- `api.py`: Main Flask application file. Contains service logic, including GPT-3.5 interaction and PDF processing.
 
 ## Notes
 

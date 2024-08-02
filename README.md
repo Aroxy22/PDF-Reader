@@ -120,11 +120,3 @@ Styling: CSS
 - Ashmitha Mohan (https://github.com/aryanmehra)
 - Aryan Mehra (https://github.com/AshmithaMohan)
 
-
-## Installation
-
-1. Set up a virtual environment and install dependencies.
-   ```sh
-   python3 -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
